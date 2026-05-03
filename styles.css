@@ -83,35 +83,13 @@ textarea {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  min-width: 180px;
+  min-width: 212px;
 }
 
-.brand-mark {
-  display: grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  color: var(--white);
-  background: var(--moss);
-  font-family: "Playfair Display", serif;
-  font-size: 23px;
-  font-weight: 800;
-}
-
-.brand strong,
-.brand small {
-  display: block;
-  line-height: 1.05;
-}
-
-.brand small {
-  margin-top: 3px;
-  color: var(--muted);
-  font-size: 12px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+.brand img {
+  width: 212px;
+  height: auto;
+  object-fit: contain;
 }
 
 .main-nav {
@@ -599,16 +577,6 @@ blockquote {
   align-items: start;
 }
 
-.contact-list {
-  display: grid;
-  gap: 10px;
-  margin: 28px 0 0;
-  padding: 0;
-  list-style: none;
-  color: var(--muted);
-  font-weight: 700;
-}
-
 .contact-form {
   display: grid;
   gap: 16px;
@@ -667,6 +635,12 @@ blockquote {
   margin-bottom: 0;
 }
 
+.footer-logo {
+  width: min(280px, 100%);
+  height: auto;
+  margin-bottom: 14px;
+}
+
 .footer-links {
   display: flex;
   flex-wrap: wrap;
@@ -722,7 +696,11 @@ blockquote {
   }
 
   .brand {
-    min-width: 0;
+    min-width: 174px;
+  }
+
+  .brand img {
+    width: 174px;
   }
 
   .header-cta {
@@ -801,8 +779,12 @@ blockquote {
     padding-left: 12px;
   }
 
-  .brand small {
-    display: none;
+  .brand {
+    min-width: 144px;
+  }
+
+  .brand img {
+    width: 144px;
   }
 
   .hero {
